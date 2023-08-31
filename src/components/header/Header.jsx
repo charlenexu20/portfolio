@@ -7,7 +7,7 @@ import me from "../../assets/me.jpg";
 
 const Header = () => {
   return (
-    <header>
+    <header id="home">
       <div className="container header__container">
         <div className="headshot">
           <img src={me} alt="me" />

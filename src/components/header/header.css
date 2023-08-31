@@ -1,0 +1,101 @@
+header {
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--color-bg-variant);
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+/* ------ TYPOGRAPHY------ */
+.header__container > h5 {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.header__container > h1 {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+.name-decor {
+  font-weight: 600;
+}
+
+/* ------ BUTTON ------ */
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+/* ------ HEADSHOT ------ */
+.headshot {
+  width: 14rem;
+  height: 16rem;
+  overflow: auto;
+}
+
+.headshot > img {
+  border-radius: 50% / 40% 60%;
+}
+
+/* ------ HEADER SOCICAL ICONS ------ */
+.header__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.header__socials::after {
+  width: 1px;
+  height: 2rem;
+}
+
+.header__socials--separator {
+  font-size: 1.25rem;
+  color: var(--color-light);
+}
+
+.header__socials--decor {
+  color: var(--color-primary-variant);
+  font-size: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header__socials--decor:hover {
+  transform: translateY(-5px);
+  color: var(--color-primary);
+}
+
+/* ------ MEDIA QUERIES ------ */
+@media screen and (max-width: 1024px) {
+  .header__container {
+    padding: 4rem 0;
+  }
+
+  .headshot {
+    width: 12rem;
+    height: 14rem;
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headshot {
+    width: 10rem;
+    height: 12rem;
+    overflow: auto;
+  }
+  .header__container > h1 {
+    font-size: 1.5rem;
+  }
+}

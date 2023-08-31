@@ -13,11 +13,13 @@
 /* ------ VARIABLES ------ */
 :root {
   --color-bg: #fff;
+  --color-bg-variant: #f5f6f7;
   --color-primary: #3b454a;
+  --color-primary-variant: #888;
   --color-secondary: #a1c397;
   --color-secondary-variant: #afcba6;
   --color-white: #fff;
-  --color-light: #f5f6f7;
+  --color-light: #e7e7e7;
 
   --transition: all 400ms ease;
 
@@ -79,9 +81,6 @@ section > h2 {
   margin-bottom: 3rem;
 }
 
-.text-light {
-  color: var(--color-light);
-}
 a {
   color: var(--color-primary);
   transition: var(--transition);
@@ -94,11 +93,11 @@ a:hover {
 .btn {
   width: max-content;
   display: inline-block;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   padding: 0.75rem 1.2rem;
-  border-radius: 0.3rem;
+  border-radius: 2rem;
   cursor: pointer;
-  border: 1px solid var(--color-light);
+  border: 1px solid var(--color-primary-variant);
   transition: var(--transition);
 }
 

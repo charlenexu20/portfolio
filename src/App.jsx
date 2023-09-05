@@ -4,7 +4,7 @@ import Footer from "./components/footer/Footer";
 import Contact from "./components/contact/Contact";
 import Header from "./components/header/Header";
 import About from "./components/about/About";
-import Skill from "./components/skill/Skill";
+import Skills from "./components/skills/Skills";
 import Portfolio from "./components/portfolio/Portfolio";
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
       <Header />
       <Nav />
       <About />
-      <Skill />
+      <Skills />
       <Portfolio />
       <Contact />
       <Footer />

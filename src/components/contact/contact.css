@@ -1,0 +1,86 @@
+.contact {
+  background-color: var(--color-bg-variant);
+  padding: 8rem 0;
+  text-align: center;
+}
+
+.contact__title {
+  border-bottom: 2px solid var(--color-secondary);
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.contact__container {
+  padding: 2rem;
+  background: var(--color-white);
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 50%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--color-light);
+  background: var(--color-white);
+  resize: none;
+  color: var(--color-primary);
+  font-family: "Poppins", sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+}
+
+/* Apply the same styles as the anchor element */
+button {
+  display: inline;
+  font-size: inherit;
+  font-family: inherit;
+  background: transparent;
+  margin: 0 auto;
+}
+
+/* ------ GREEN-COLOR-BUTTON ------ */
+/* .contact__btn {
+  width: max-content;
+  display: inline-block;
+  padding: 0.75rem 1.2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: var(--transition);
+  background: var(--color-secondary);
+  color: var(--color-white);
+  border-color: transparent;
+  margin: 0 auto;
+  letter-spacing: 0.1rem;
+}
+
+.contact__btn:hover {
+  color: var(--color-white);
+  background: var(--color-secondary-variant);
+} */
+
+/* ------ MEDIA QUERIES ( Medium Tablets) ------ */
+@media screen and (max-width: 1024px) {
+}
+
+/* ------ MEDIA QUERIES ( Small Mobible Devices) ------ */
+
+@media screen and (max-width: 600px) {
+  .contact__container {
+    max-width: 95%;
+  }
+}

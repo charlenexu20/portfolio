@@ -3,9 +3,9 @@ import { FiLinkedin } from "react-icons/fi";
 import { BsGithub } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
 
-const HeaderSocial = () => {
+const HeaderSocial = ({ customClass }) => {
   return (
-    <div className="header__socials">
+    <div className={`header__socials ${customClass}`}>
       <a
         className="header__socials--decor"
         href="https://github.com/charlenexu20"

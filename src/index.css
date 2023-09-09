@@ -17,7 +17,8 @@
   --color-primary: #3b454a;
   --color-primary-variant: #888;
   --color-secondary: #a1c397;
-  --color-secondary-variant: #afcba6;
+  --color-secondary-variant: #c8e4b2;
+  --color-pink: #ffe5e5;
   --color-white: #fff;
   --color-light: #e7e7e7;
 
@@ -97,13 +98,21 @@ a:hover {
 }
 
 .btn:hover {
-  background: var(--color-secondary-variant);
-  color: var(--color-white);
+  background: var(--color-light);
+  color: var(--color-primary);
   border-color: transparent;
+  transition-duration: 300ms;
+  transform: scale(1.02);
 }
 
 .btn-primary {
   background: var(--color-secondary);
+  color: var(--color-white);
+  border: transparent;
+}
+
+.btn-primary:hover {
+  background: var(--color-secondary-variant);
   color: var(--color-white);
 }
 

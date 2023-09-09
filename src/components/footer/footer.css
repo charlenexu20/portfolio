@@ -1,0 +1,22 @@
+footer {
+  background: var(--color-primary);
+  padding-top: 1.3rem;
+  padding-bottom: 8.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer__social .header__socials--decor:hover {
+  color: var(--color-white);
+}
+
+.footer__copyright > small {
+  color: var(--color-primary-variant);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.footer__copyright-icon {
+  font-size: 0.6rem;
+  color: var(--color-primary-variant);
+}

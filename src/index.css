@@ -122,6 +122,15 @@ img {
   object-fit: cover;
 }
 
+/* ------ SELECTION COLOR ------ */
+::selection {
+  background-color: var(--color-pink);
+}
+
+::-moz-selection {
+  background-color: var(--color-pink);
+}
+
 /* ------ MEDIA QUERIES ( Medium Tablets) ------ */
 @media screen and (max-width: 1024px) {
   .container {

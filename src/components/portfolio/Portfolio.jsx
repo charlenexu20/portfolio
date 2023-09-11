@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./portfolio.css";
 import wandrrrImg from "../../assets/wandrrrImg.png";
+import wandrrrGif from "../../assets/wandrrrGif.gif";
+import carImg from "../../assets/carImg.png";
+import carGif from "../../assets/carGif.gif";
 import {
   BiLogoReact,
   BiLogoPostgresql,
@@ -34,6 +37,7 @@ const Portfolio = () => {
       id: 1,
       title: "Wandrrr",
       img: wandrrrImg,
+      gif: wandrrrGif,
       description:
         "Wandrrr is a web application for individuals who are interested in documenting their journeys in a beautiful and organized way. The platform allows users to add and delete journals from their list of journals. Wandrrr also allows users to view their list at a glance, view individual journal in detail, and update their content.",
       technologies: [
@@ -48,9 +52,10 @@ const Portfolio = () => {
     {
       id: 2,
       title: "CarCar",
-      img: wandrrrImg,
+      img: carImg,
+      gif: carGif,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore magna aliqua. Aenean sed adipiscing diam donec adipiscing tristique risus. Nec tincidunt praesent semper feugiat nibh sed.",
+        "CarCar is an inventory management solution tailored for dealerships. It offers an all-inclusive platform for creating and managing automobile records, service histories, and sales transactions.",
       technologies: [
         <BiLogoReact key="react" />,
         <SiFastapi key="fastapi" />,
@@ -58,7 +63,7 @@ const Portfolio = () => {
         <BiLogoTailwindCss key="tailwindcss" />,
         <BiLogoDocker key="docker" />,
       ],
-      button: "#",
+      button: "https://github.com/charlenexu20/car-car",
     },
     {
       id: 3,

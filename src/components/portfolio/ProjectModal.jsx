@@ -1,6 +1,5 @@
 import React from "react";
 import Modal from "react-modal";
-import wandrrrGif from "../../assets/wandrrrGif.gif";
 import { IoClose } from "react-icons/io5";
 
 const ProjectModal = ({ project, isOpen, closeModal }) => {
@@ -17,8 +16,8 @@ const ProjectModal = ({ project, isOpen, closeModal }) => {
           <IoClose />
         </button>
         <img
-          className="project__modal-img"
-          src={wandrrrGif}
+          className="project__modal-demo"
+          src={`${project.gif}`}
           alt={`${project.title} Demo`}
         />
         <div className="project__modal-details">

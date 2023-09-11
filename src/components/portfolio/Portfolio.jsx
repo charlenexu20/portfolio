@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./portfolio.css";
-import placeholder from "../../assets/placeholder.jpg";
+import wandrrrImg from "../../assets/wandrrrImg.png";
 import {
   BiLogoReact,
   BiLogoPostgresql,
@@ -33,9 +33,9 @@ const Portfolio = () => {
     {
       id: 1,
       title: "Wandrrr",
-      img: placeholder,
+      img: wandrrrImg,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam id diam maecenas ultricies mi eget mauris pharetra et. Sed vulputate mi sit amet.",
+        "Wandrrr is a web application for individuals who are interested in documenting their journeys in a beautiful and organized way. The platform allows users to add and delete journals from their list of journals. Wandrrr also allows users to view their list at a glance, view individual journal in detail, and update their content.",
       technologies: [
         <BiLogoReact key="react" />,
         <SiFastapi key="fastapi" />,
@@ -43,12 +43,12 @@ const Portfolio = () => {
         <BiLogoTailwindCss key="tailwindcss" />,
         <BiLogoDocker key="docker" />,
       ],
-      button: "#",
+      button: "https://github.com/charlenexu20/wandrrr",
     },
     {
       id: 2,
       title: "CarCar",
-      img: placeholder,
+      img: wandrrrImg,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore magna aliqua. Aenean sed adipiscing diam donec adipiscing tristique risus. Nec tincidunt praesent semper feugiat nibh sed.",
       technologies: [
@@ -63,7 +63,7 @@ const Portfolio = () => {
     {
       id: 3,
       title: "To-Do",
-      img: placeholder,
+      img: wandrrrImg,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada.",
       technologies: [
@@ -78,7 +78,7 @@ const Portfolio = () => {
     {
       id: 4,
       title: "To-Do",
-      img: placeholder,
+      img: wandrrrImg,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada.",
       technologies: [
@@ -126,7 +126,6 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
-
       {isModalOpen && (
         <ProjectModal
           project={selectedProject}

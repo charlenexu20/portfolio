@@ -70,9 +70,10 @@
 }
 
 .project__title {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   /* margin: 0 0 10px; */
   letter-spacing: 0.025rem;
+  font-weight: 400;
 }
 
 .project__icons {
@@ -139,6 +140,7 @@
 
 .project__modal-title {
   letter-spacing: 0.025rem;
+  font-weight: 400;
 }
 
 /* .logo-url {

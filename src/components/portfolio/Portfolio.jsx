@@ -2,20 +2,24 @@ import React, { useState } from "react";
 import "./portfolio.css";
 import wandrrrImg from "../../assets/wandrrrImg.png";
 import wandrrrGif from "../../assets/wandrrrGif.gif";
+import taskverseImg from "../../assets/taskverseImg.png";
+import taskverseGif from "../../assets/taskverseGif.gif";
 import carImg from "../../assets/carImg.png";
 import carGif from "../../assets/carGif.gif";
+import wardrobifyImg from "../../assets/wardrobifyImg.png";
+import wardrobifyGif from "../../assets/wardrobifyGif.gif";
 import {
   BiLogoReact,
   BiLogoPostgresql,
   BiLogoTailwindCss,
   BiLogoDocker,
-  // BiLogoDjango,
-  // BsFillBootstrapFill,
-  // BiLogoPython,
-  // BiLogoHtml5,
-  // BiLogoCss3,
+  BiLogoDjango,
+  BiLogoPython,
+  BiLogoHtml5,
+  BiLogoCss3,
 } from "react-icons/bi";
-import { SiFastapi } from "react-icons/si";
+import { SiFastapi, SiSqlite } from "react-icons/si";
+import { BsFillBootstrapFill } from "react-icons/bs";
 import ProjectModal from "./ProjectModal";
 
 const Portfolio = () => {
@@ -57,43 +61,45 @@ const Portfolio = () => {
       description:
         "CarCar is an inventory management solution tailored for dealerships. It offers an all-inclusive platform for creating and managing automobile records, service histories, and sales transactions.",
       technologies: [
+        <BiLogoDjango key="django" />,
         <BiLogoReact key="react" />,
-        <SiFastapi key="fastapi" />,
         <BiLogoPostgresql key="postgresql" />,
-        <BiLogoTailwindCss key="tailwindcss" />,
+        <BsFillBootstrapFill key="bootstrap" />,
         <BiLogoDocker key="docker" />,
       ],
       button: "https://github.com/charlenexu20/car-car",
     },
     {
       id: 3,
-      title: "To-Do",
-      img: wandrrrImg,
+      title: "Wardrobify",
+      img: wardrobifyImg,
+      gif: wardrobifyGif,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada.",
+        "Wardrobify is a user-friendly digital tool designed to simplify the management of your hat and shoe collections. This platform empowers users to effortlessly organize their existing assortments by adding or removing items from their virtual wardrobes. Users can easily view their collections at a glance and swiftly locate specific items.",
       technologies: [
+        <BiLogoDjango key="django" />,
         <BiLogoReact key="react" />,
-        <SiFastapi key="fastapi" />,
         <BiLogoPostgresql key="postgresql" />,
-        <BiLogoTailwindCss key="tailwindcss" />,
+        <BsFillBootstrapFill key="bootstrap" />,
         <BiLogoDocker key="docker" />,
       ],
-      button: "#",
+      button: "https://github.com/charlenexu20/wardrobify",
     },
     {
       id: 4,
-      title: "To-Do",
-      img: wandrrrImg,
+      title: "TaskVerse",
+      img: taskverseImg,
+      gif: taskverseGif,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada.",
+        "TaskVerse is a project and task manager application. It's composed of projects, tasks, and the ability to log in, log out, and sign up for the application. ",
       technologies: [
-        <BiLogoReact key="react" />,
-        <SiFastapi key="fastapi" />,
-        <BiLogoPostgresql key="postgresql" />,
-        <BiLogoTailwindCss key="tailwindcss" />,
-        <BiLogoDocker key="docker" />,
+        <BiLogoPython key="python" />,
+        <BiLogoDjango key="django" />,
+        <BiLogoHtml5 key="html" />,
+        <BiLogoCss3 key="css" />,
+        <SiSqlite key="sqlite3" />,
       ],
-      button: "#",
+      button: "https://github.com/charlenexu20/taskverse",
     },
   ];
 

@@ -38,13 +38,6 @@
   margin-top: 0.5rem;
 }
 
-/* ------ MEDIA QUERIES ------ */
-/* @media screen and (max-width: 1024px) {
-  .skills__container {
-    grid-template-columns: repeat(5, 1fr);
-  }
-} */
-
 @media screen and (max-width: 600px) {
   .skills__container {
     grid-template-columns: repeat(4, 1fr);

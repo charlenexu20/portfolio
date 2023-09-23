@@ -1,7 +1,5 @@
 import React from "react";
 import "./about.css";
-// import ME from "../../assets/me.jpg";
-// import CX from "../../assets/CX.JPG";
 import charlene from "../../assets/charlene.jpg";
 
 const About = () => {

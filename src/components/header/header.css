@@ -11,6 +11,7 @@ header {
   justify-content: center;
   height: 100%;
   position: relative;
+  z-index: 1;
 }
 
 /* ------ TYPOGRAPHY------ */
@@ -76,6 +77,46 @@ header {
   color: var(--color-primary);
 }
 
+/* ------ IRREGULAR SHAPES ------ */
+.irregular-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.shape1 {
+  width: 29%;
+  padding-top: 26%;
+  top: 23%;
+  left: 28%;
+  border-radius: 40% / 70% 53%;
+  background-color: rgba(250, 207, 203, 0.5);
+  position: absolute;
+}
+
+.shape2 {
+  width: 28%;
+  padding-top: 24%;
+  top: 32%;
+  right: 22%;
+  border-radius: 45% / 46% 55%;
+  background-color: rgba(200, 226, 171, 0.5);
+  position: absolute;
+}
+
+.shape3 {
+  width: 28%;
+  padding-top: 23%;
+  top: 38%;
+  left: 20%;
+  border-radius: 43% / 60% 35%;
+  background-color: rgba(220, 220, 220, 0.5);
+  position: absolute;
+}
+
 /* ------ MEDIA QUERIES ------ */
 @media screen and (max-width: 1024px) {
   .header__container {
@@ -96,6 +137,6 @@ header {
     overflow: auto;
   }
   .header__container > h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }

@@ -16,6 +16,7 @@ import {
 } from "react-icons/bi";
 import { FaBootstrap, FaNodeJs, FaSass, FaNpm } from "react-icons/fa";
 import { SiExpress, SiFastapi, SiPostgresql, SiVitest } from "react-icons/si";
+import { Fade } from "react-awesome-reveal";
 
 const skillsData = [
   { icon: <BiLogoJavascript />, title: "Javascipt" },
@@ -42,17 +43,19 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="skills">
-      <h2 className="skills__title">Skills</h2>
-      <div className="container skills__container">
-        {skillsData.map((skill, index) => (
-          <div key={index} className="skills__list">
-            <div className="skills__list-icon">{skill.icon}</div>
-            <small className="skills__list-name">{skill.title}</small>
-          </div>
-        ))}
-      </div>
-    </section>
+    <Fade triggerOnce duration={1500} fraction={0.4}>
+      <section id="skills" className="skills">
+        <h2 className="skills__title">Skills</h2>
+        <div className="container skills__container">
+          {skillsData.map((skill, index) => (
+            <div key={index} className="skills__list">
+              <div className="skills__list-icon">{skill.icon}</div>
+              <small className="skills__list-name">{skill.title}</small>
+            </div>
+          ))}
+        </div>
+      </section>
+    </Fade>
   );
 };
 

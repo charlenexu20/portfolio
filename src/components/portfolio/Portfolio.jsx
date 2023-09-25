@@ -21,6 +21,7 @@ import {
 import { SiFastapi, SiSqlite } from "react-icons/si";
 import { BsFillBootstrapFill } from "react-icons/bs";
 import ProjectModal from "./ProjectModal";
+import { Fade } from "react-awesome-reveal";
 
 const Portfolio = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -104,47 +105,48 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="portfolio">
-      <h2 className="portfolio__title">Portfolio</h2>
-
-      <div className="container portfolio__container">
-        {projects.map((project) => (
-          // eslint-disable-next-line
-          <div
-            className="portfolio__card"
-            key={project.id}
-            onClick={() => openModal(project)}
-          >
-            <div className="portfolio__card-image">
-              <img src={project.img} alt={project.title} />
-            </div>
-            <div className="portfolio__card-content">
-              <div className="portfolio__card-header">
-                <h3 className="project__title">{project.title}</h3>
-                <div className="project__icons">{project.technologies}</div>
+    <Fade triggerOnce duration={1500} fraction={0.3}>
+      <section id="portfolio" className="portfolio">
+        <h2 className="portfolio__title">Portfolio</h2>
+        <div className="container portfolio__container">
+          {projects.map((project) => (
+            // eslint-disable-next-line
+            <div
+              className="portfolio__card"
+              key={project.id}
+              onClick={() => openModal(project)}
+            >
+              <div className="portfolio__card-image">
+                <img src={project.img} alt={project.title} />
+              </div>
+              <div className="portfolio__card-content">
+                <div className="portfolio__card-header">
+                  <h3 className="project__title">{project.title}</h3>
+                  <div className="project__icons">{project.technologies}</div>
+                </div>
+              </div>
+              <div className="portfolio__cta">
+                <a
+                  href={project.button}
+                  target="_blank"
+                  className="btn btn-primary"
+                  rel="noreferrer"
+                >
+                  &lt; See code /&gt;
+                </a>
               </div>
             </div>
-            <div className="portfolio__cta">
-              <a
-                href={project.button}
-                target="_blank"
-                className="btn btn-primary"
-                rel="noreferrer"
-              >
-                &lt; See code /&gt;
-              </a>
-            </div>
-          </div>
-        ))}
-      </div>
-      {isModalOpen && (
-        <ProjectModal
-          project={selectedProject}
-          isOpen={isModalOpen}
-          closeModal={closeModal}
-        />
-      )}
-    </section>
+          ))}
+        </div>
+        {isModalOpen && (
+          <ProjectModal
+            project={selectedProject}
+            isOpen={isModalOpen}
+            closeModal={closeModal}
+          />
+        )}
+      </section>
+    </Fade>
   );
 };
 
